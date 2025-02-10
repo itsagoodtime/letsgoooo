@@ -1415,8 +1415,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 	if Rayfield:FindFirstChild('Loading') then
 		if getgenv and not getgenv().rayfieldCached then
 			Rayfield.Enabled = true
-			Rayfield.Loading.Visible.Title.Text = '魔魂脚本'
 			Rayfield.Loading.Visible = true
+			Rayfield.Loading.Visible.Title.Text = '魔魂脚本'
 
 			task.wait(1.4)
 			Rayfield.Loading.Visible = false
