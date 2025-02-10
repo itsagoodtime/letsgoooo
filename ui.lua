@@ -1415,6 +1415,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 	if Rayfield:FindFirstChild('Loading') then
 		if getgenv and not getgenv().rayfieldCached then
 			Rayfield.Enabled = true
+			Rayfield.Loading.Visible.Logo:Destroy()
+			Rayfield.Loading.Visible.Title.Text = '魔魂脚本'
 			Rayfield.Loading.Visible = true
 
 			task.wait(1.4)
@@ -3604,7 +3606,7 @@ if useStudio then
 	local ColorPicker = Tab2:CreateColorPicker({
 		Name = "Color Picker",
 		Color = Color3.fromRGB(255,255,255),
-		Flag = "ColorPicfsefker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "ColorPicfsefker1",
 		Callback = function(Value)
 			-- The function that takes place every time the color picker is moved/changed
 			-- The variable (Value) is a Color3fromRGB value based on which color is selected
@@ -3617,7 +3619,7 @@ if useStudio then
 		Increment = 10,
 		Suffix = "Bananas",
 		CurrentValue = 40,
-		Flag = "Slidefefsr1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "Slidefefsr1",
 		Callback = function(Value)
 			-- The function that takes place when the slider changes
 			-- The variable (Value) is a number which correlates to the value the slider is currently at
@@ -3652,7 +3654,7 @@ if useStudio then
 	local Toggle = Tab:CreateToggle({
 		Name = "Toggle Example",
 		CurrentValue = false,
-		Flag = "Toggle1adwawd", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "Toggle1adwawd",
 		Callback = function(Value)
 			-- The function that takes place when the toggle is pressed
 			-- The variable (Value) is a boolean on whether the toggle is true or false
@@ -3662,7 +3664,7 @@ if useStudio then
 	local ColorPicker = Tab:CreateColorPicker({
 		Name = "Color Picker",
 		Color = Color3.fromRGB(255,255,255),
-		Flag = "ColorPicker1awd", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "ColorPicker1awd",
 		Callback = function(Value)
 			-- The function that takes place every time the color picker is moved/changed
 			-- The variable (Value) is a Color3fromRGB value based on which color is selected
@@ -3675,7 +3677,7 @@ if useStudio then
 		Increment = 10,
 		Suffix = "Bananas",
 		CurrentValue = 40,
-		Flag = "Slider1dawd", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "Slider1dawd",
 		Callback = function(Value)
 			-- The function that takes place when the slider changes
 			-- The variable (Value) is a number which correlates to the value the slider is currently at
@@ -3704,7 +3706,7 @@ if useStudio then
 		Options = thoptions,
 		CurrentOption = {"Default"},
 		MultipleOptions = false,
-		Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "Dropdown1",
 		Callback = function(Options)
 			--Window.ModifyTheme(Options[1])
 			-- The function that takes place when the selected option is changed
@@ -3758,7 +3760,7 @@ if useStudio then
 		Name = "Keybind Example",
 		CurrentKeybind = "Q",
 		HoldToInteract = false,
-		Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+		Flag = "Keybind1",
 		Callback = function(Keybind)
 			-- The function that takes place when the keybind is pressed
 			-- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
