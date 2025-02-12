@@ -1,4 +1,4 @@
-local Services = loadstring(game:HttpGet('https://codeberg.org/whyubullyme/sup/raw/branch/main/good/s1.lua'))();
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/itsagoodtime/letsgoooo/refs/heads/main/good/s1.lua'))();
 local ContextActionService, HttpService = Services:Get('ContextActionService', 'HttpService');
 
 local ControlModule = {};
