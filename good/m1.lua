@@ -3,7 +3,7 @@
 -- @classmod Maid
 -- @see Signal
 
-local Signal = loadstring(game:HttpGet('https://codeberg.org/whyubullyme/sup/raw/branch/main/good/s2.lua'))();
+local Signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/itsagoodtime/letsgoooo/refs/heads/main/good/s2.lua'))();
 local tableStr = 'table';
 local classNameStr = 'Maid';
 local funcStr = 'function';
