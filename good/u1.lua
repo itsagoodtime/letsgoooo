@@ -1,5 +1,5 @@
-local Services = loadstring(game:HttpGet('https://codeberg.org/whyubullyme/sup/raw/branch/main/good/s1.lua'))();
-local Signal = loadstring(game:HttpGet('https://codeberg.org/whyubullyme/sup/raw/branch/main/good/s2.lua'))();
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/itsagoodtime/letsgoooo/refs/heads/main/good/s1.lua'))();
+local Signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/itsagoodtime/letsgoooo/refs/heads/main/good/s2.lua'))();
 
 local Players, UserInputService, HttpService, CollectionService = Services:Get('Players', 'UserInputService', 'HttpService', 'CollectionService');
 local LocalPlayer = Players.LocalPlayer;
