@@ -1,5 +1,4 @@
--- This was my first time ever using the drawing library, there's probably 200 issues I haven't found yet. Please tell me if there are any problems.
-
+local library = letsdoit('ui.lua','misc')
 
 local Players = game:GetService("Players")
 
