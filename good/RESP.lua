@@ -1,11 +1,3 @@
-local library = letsdoit('ui.lua','misc')
-
-repeat
-    task.wait()
-until library.Flags.toggleESP
-
-local Players = game:GetService("Players")
-
 local ESP = {
     Enabled = library.Flags.toggleESP.CurrentValue,
     Settings = {
