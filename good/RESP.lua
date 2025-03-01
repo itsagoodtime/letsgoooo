@@ -4,7 +4,7 @@
 local Players = game:GetService("Players")
 
 local ESP = {
-    Enabled = true,
+    Enabled = library.Flags.toggleESP.CurrentValue,
     Settings = {
         RemoveOnDeath = true,
         MaxDistance = 300, -- Max Distance for esp to render (IN METERS).
