@@ -2,7 +2,7 @@ local library = letsdoit('ui.lua','misc')
 
 repeat
     task.wait()
-until library.Flags.toggleESP.CurrentValue
+until library.Flags.toggleESP
 
 local Players = game:GetService("Players")
 
