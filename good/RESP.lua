@@ -1,5 +1,5 @@
 local ESP = {
-    Enabled = library.Flags.toggleESP.CurrentValue,
+    Enabled = true,
     Settings = {
         RemoveOnDeath = true,
         MaxDistance = 300, -- Max Distance for esp to render (IN METERS).
